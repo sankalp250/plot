@@ -15,7 +15,7 @@ tooltip = ['a','b','c','d','e']
 st.altair_chart(chart)
 
 st.header('2.1 Interactive charts')
-df = pd.read_csv('C:/Users/Sankalp/Downloads/lang_data.csv')
+df = pd.read_csv('lang_data.csv')
 lang_list = df.columns.tolist()
 lang_choices = st.multiselect('Choose your language', lang_list)
 new_df = df[lang_choices]
@@ -26,7 +26,7 @@ st.area_chart(new_df)
 
 st.header('3.Data Visualization with plotly')
 st.subheader('3.1 Displaying rhe dataset')
-df = pd.read_csv('C:/Users/Sankalp/Downloads/tips.csv')
+df = pd.read_csv('tips.csv')
 st.dataframe(df.head())
 
 st.subheader('3.2 Pie Chart')
